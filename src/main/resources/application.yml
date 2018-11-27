@@ -1,0 +1,20 @@
+server:
+  port: 8080    #default port where the service will be started
+ 
+eureka:         #tells about the Eureka server details and its refresh time
+  instance:
+    leaseRenewalIntervalInSeconds: 10
+    leaseExpirationDurationInSeconds: 30
+  client:
+    serviceUrl:
+        defaultZone: http://eureka-server.local.svc/eureka/
+    healthcheck:
+      enabled: true
+    lease:
+      duration: 5
+ 
+management:
+  security:
+    enabled: false  #disable the spring security on the management endpoints like /env, /refresh etc.
+        
+ 
