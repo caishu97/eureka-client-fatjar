@@ -7,7 +7,7 @@ eureka:         #tells about the Eureka server details and its refresh time
     leaseExpirationDurationInSeconds: 30
   client:
     serviceUrl:
-      defaultZone: http://eureka-server.myproject.svc:8761/eureka/
+      defaultZone: http://172.17.0.1:1080/eureka/
     healthcheck:
       enabled: true
     lease:
