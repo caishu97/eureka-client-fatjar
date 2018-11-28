@@ -11,6 +11,7 @@
     <name>eureka-demo-client1</name>
     <description>Demo project for Spring Boot eureka client</description>
     
+    <!--
     <repositories>    
         <repository>    
             <snapshots>    
@@ -23,13 +24,15 @@
     </repositories>  
     
     <pluginRepositories>    
-    <pluginRepository>    
-      <id>public</id>    
-      <name>Public Repositories</name>    
-      <url>http://nexus.polaristech.io:8081/nexus/content/groups/public//</url>    
-    </pluginRepository>    
-  </pluginRepositories>   
-  
+        <pluginRepository>    
+            <id>public</id>    
+            <name>Public Repositories</name>    
+            <url>http://nexus.polaristech.io:8081/nexus/content/groups/public//</url>    
+        </pluginRepository>    
+    </pluginRepositories>   
+    -->
+    
+</project>
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
